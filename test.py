@@ -1,7 +1,6 @@
 # coding=utf-8
 from tkinter import *
 from tkinter import ttk
-import math
 import sys
 
 root = Tk()
@@ -24,6 +23,7 @@ for i in bttn_list:
         c = 0
         r += 1
 
+label1.grid()
 calc_entry = Entry(root, width = 33)
 calc_entry.grid(row=0, column=0, columnspan=5)
 
