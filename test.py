@@ -23,9 +23,10 @@ for i in bttn_list:
         c = 0
         r += 1
 
-label1.grid()
+
 calc_entry = Entry(root, width = 33)
 calc_entry.grid(row=0, column=0, columnspan=5)
+label1.grid()
 
 def calc(key):
     global memory
@@ -35,7 +36,8 @@ def calc(key):
         root.after(1, root.destroy)
         sys.exit()
     elif key == "Дублировать":
-        calc_entry.insert(END, END)
+        v = calc_entry.get()
+        label1.config(text = v)
     else:
         calc_entry.insert(END, key)
 
