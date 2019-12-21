@@ -29,7 +29,6 @@ calc_entry.grid(row=0, column=0, columnspan=5)
 label1.grid()
 
 def calc(key):
-    global memory
     if key == "Очистить":
         calc_entry.delete(0, END)
     elif key == "Exit":
